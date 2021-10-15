@@ -1,0 +1,48 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
+
+/* SLIDER */
+
+.slider {
+    margin-top: 7%;
+}
+
+.slider-inner {
+    width: 44.5%;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slide-2,
+.slide-3,
+.slide-4,
+.slide-5 {
+    display: none;
+}
+
+.text-2,
+.text-3,
+.text-4,
+.text-5 {
+    display: none;
+}
+
+.switchers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-left: 28%;
+    width: 65%;
+}
+
+.inputs {
+    margin-top: 1%;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+}
