@@ -1,0 +1,195 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+} 
+  
+/* BUTTONS */
+
+  .slider {
+    position: relative;
+    max-width: 50%;
+    margin: 2% auto;
+  }
+  
+  .slider input[name="switch"] {
+    display: none;
+  }
+  
+  .switch {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  
+  
+  .switch label {
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    cursor: pointer;
+    margin: 0 0.2em;
+    box-shadow: 0 0 0.2em 0 rgba(0, 0, 0, .8);
+    border-radius: 50%;
+    border: 1px solid #2f363c;
+    background-color: #738290;
+  }
+  
+  #slide1:checked~.slider-controls .switch label[for="slide1"] {
+    background-color: #ffffff;
+  }
+  #slide1:hover~.slider-controls .switch label[for="slide1"] {
+    background-color: #C5DDE8;
+  }
+  
+  #slide1:active~.slider-controls .switch label[for="slide1"] {
+    background-color: #f5b66e;
+  }
+
+  #slide2:checked~.slider-controls .switch label[for="slide2"] {
+    background-color: #ffffff;
+  }
+  
+  #slide2:hover~.slider-controls .switch label[for="slide2"] {
+    background-color: #C5DDE8;
+  }
+
+  #slide2:active~.slider-controls .switch label[for="slide2"] {
+    background-color: #f5b66e;
+  }
+  
+  #slide3:checked~.slider-controls .switch label[for="slide3"] {
+    background-color: #ffffff;
+  }
+
+  #slide3:hover~.slider-controls .switch label[for="slide3"] {
+    background-color: #C5DDE8;
+  }
+  
+  #slide3:active~.slider-controls .switch label[for="slide3"] {
+    background-color: #f5b66e;
+  }
+
+  #slide4:checked~.slider-controls .switch label[for="slide4"] {
+    background-color: #ffffff;
+  }
+
+  #slide4:hover~.slider-controls .switch label[for="slide4"] {
+    background-color: #C5DDE8;
+  }
+  
+  #slide4:active~.slider-controls .switch label[for="slide4"] {
+    background-color: #f5b66e;
+  }
+
+  #slide5:checked~.slider-controls .switch label[for="slide5"] {
+    background-color: #ffffff;
+  }
+
+  #slide5:hover~.slider-controls .switch label[for="slide5"] {
+    background-color: #C5DDE8;
+  }
+
+  #slide5:active~.slider-controls .switch label[for="slide5"] {
+    background-color: #f5b66e;
+  }
+  
+  
+/* SLIDER */
+
+  .slider-inner {
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  
+  .slides img {
+    width: 100%;
+    flex-shrink:0;
+  }
+  
+  #slide1:checked~.slider-inner .slides {
+    transform: translate(0);
+  }
+  
+  #slide2:checked~.slider-inner .slides {
+    transform: translateX(-100%);
+  }
+  
+  #slide3:checked~.slider-inner .slides {
+    transform: translateX(-200%);
+  }
+  
+  #slide4:checked~.slider-inner .slides {
+    transform: translateX(-300%);
+  }
+
+  #slide5:checked~.slider-inner .slides {
+    transform: translateX(-400%);
+  }
+
+
+  /* DESCRIPTION */
+
+.description {
+    overflow: hidden;
+    box-shadow: none;
+    padding-left: 1%;
+    flex-basis: 50%;
+  }
+  
+  .description-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  
+  .description-inner p {
+    width: 100%;
+    flex-shrink:0;
+  }
+
+  #slide1:checked~.slider-controls .description .description-inner {
+    transform: translate(0);
+  }
+  
+  #slide2:checked~.slider-controls .description .description-inner {
+    transform: translateX(-100%);
+  }
+  
+  #slide3:checked~.slider-controls .description .description-inner {
+    transform: translateX(-200%);
+  }
+  
+  #slide4:checked~.slider-controls .description .description-inner {
+    transform: translateX(-300%);
+  }
+
+  #slide5:checked~.slider-controls .description .description-inner {
+    transform: translateX(-400%);
+  }
+
+  .slider-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+
+  @media (max-width: 320px) {
+    .switch {justify-content: center;}
+    .slider-controls {
+      flex-direction: column-reverse;
+      margin-top: 0.6em;
+    }
+    .slider {
+      max-width: 100%;
+    }
+  }
